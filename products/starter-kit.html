@@ -21,6 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Snipcart CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css"
+    />
 
     <link rel="stylesheet" href="../styles.css" />
   </head>
@@ -44,13 +49,31 @@
           <div>
             <h1>Starter kit</h1>
             <div class="price">$18</div>
-            <a href="#" class="button"
+            <a href="#" class="button snipcart-add-item"
+            data-item-id="starter-kit"
+            data-item-price="18"
+            data-item-url="../products/starter-kit.html"
+            data-item-description="All you need to grow and care for your plants."
+            data-item-image="../images/starter-kit.jpg"
+            data-item-name="Starter Kit"
               >add to cart
             </a>
       </div>
     </main>
+      <!-- Snipcart Start -->
+      <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"
+    ></script>
+    <div
+      id="snipcart"
+      data-config-modal-style="side"
+      data-api-key="OTQ2OWQ2NmYtZTI4Ni00MzVhLWIzYmQtMWE1MjVlMDVjZjM2NjM3NDY3ODU0Nzc1ODkxOTg4"
+      hidden
+    ></div>
+    <!-- Snipcart End -->
     <footer>
-      copyright &copy;
-    </footer>
+     copyright &copy;
+   </footer>
   </body>
 </html>
