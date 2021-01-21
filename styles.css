@@ -1,0 +1,161 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 20px;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+header #logo {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+header #logo h1 {
+  font-size: 20px;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 2em;
+  font-size: 15px;
+}
+header nav a.active {
+  border-bottom: 2px solid rosybrown;
+}
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header #cart-menu {
+  color: rgb(34, 69, 111);
+}
+
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 40px;
+}
+
+/* homepage banner */
+
+#banner {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+#banner img {
+  width: 45%;
+  max-width: 300px;
+  height: auto;
+}
+#banner h2 {
+  color: #111111;
+  line-height: 1.2em;
+}
+#banner h2 span {
+  font-family: "Dancing Script";
+  font-size: 37px;
+}
+#banner > div {
+  width: 45%;
+  margin-left: 1em;
+}
+#banner .button {
+  text-decoration: none;
+  color: rosybrown;
+}
+
+/* products */
+#products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.product-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.1);
+}
+.product-card {
+  text-align: center;
+}
+.product-card .button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #111111;
+  font-size: 14px;
+  border-top: 1px solid #fafafa;
+  padding-top: 10px;
+}
+
+.product-card .button:hover {
+  color: rosybrown;
+}
+
+.product-card .price {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 25px;
+  font-weight: bold;
+}
+#back {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 10px;
+}
+#product-detail {
+  display: flex;
+}
+#product-detail h1 {
+  margin-top: 0;
+}
+#product-detail img {
+  max-width: 400px;
+  height: auto;
+}
+#product-detail > div {
+  margin-left: 20px;
+}
+#product-detail .price {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#product-detail .button {
+  background-color: rosybrown;
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+/* footer */
+footer {
+  background-color: #111111;
+  padding: 20px 0;
+  color: #d4d4d4;
+  text-align: center;
+  font-size: 11px;
+}
