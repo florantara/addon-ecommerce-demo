@@ -39,6 +39,22 @@ header nav a:first-child {
 
 header #cart-menu {
   color: rgb(34, 69, 111);
+  position: relative;
+}
+
+header #total-price-bubble {
+  position: absolute;
+  background-color: rosybrown;
+  font-size: 12px;
+  font-weight: bold;
+  height: 1.5em;
+  border-radius: 10px;
+  padding: 0.5em 0.7em;
+  top: -0.3em;
+  left: 60px;
+  color: white;
+  display: grid;
+  place-items: center;
 }
 
 main {
