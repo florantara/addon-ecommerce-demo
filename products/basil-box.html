@@ -41,12 +41,13 @@
           <div>
             <h1>Basil box</h1>
             <div class="price">$26</div>
-            <div id='product-component-1611199770768'></div>
+            <div id='product-component-1613067713769'></div>
       </div>
     </main>
     <footer>
       copyright &copy;
     </footer>
+    
     <script type="text/javascript">
     /*<![CDATA[*/
     (function () {
@@ -69,13 +70,13 @@
       }
       function ShopifyBuyInit() {
         var client = ShopifyBuy.buildClient({
-          domain: 'addon-ecommerce-demo.myshopify.com',
-          storefrontAccessToken: '20aff5babef94b97fd9828f04e151e31',
+          domain: 'addon-demo.myshopify.com',
+          storefrontAccessToken: '32f0c2a7912559c34533f332af77d2c2',
         });
         ShopifyBuy.UI.onReady(client).then(function (ui) {
           ui.createComponent('product', {
-            id: '6184800288958',
-            node: document.getElementById('product-component-1611199770768'),
+            id: '6272607518872',
+            node: document.getElementById('product-component-1613067713769'),
             moneyFormat: '%24%7B%7Bamount%7D%7D',
             options: {
       "product": {
@@ -88,6 +89,9 @@
             }
           },
           "button": {
+            "font-size": "14px",
+            "padding-top": "15px",
+            "padding-bottom": "15px",
             ":hover": {
               "background-color": "#a98181"
             },
@@ -95,8 +99,13 @@
             ":focus": {
               "background-color": "#a98181"
             },
-            "padding-left": "19px",
-            "padding-right": "19px"
+            "padding-left": "21px",
+            "padding-right": "21px"
+          },
+          "quantityInput": {
+            "font-size": "14px",
+            "padding-top": "15px",
+            "padding-bottom": "15px"
           }
         },
         "contents": {
@@ -133,6 +142,9 @@
             }
           },
           "button": {
+            "font-size": "14px",
+            "padding-top": "15px",
+            "padding-bottom": "15px",
             ":hover": {
               "background-color": "#a98181"
             },
@@ -140,17 +152,26 @@
             ":focus": {
               "background-color": "#a98181"
             },
-            "padding-left": "19px",
-            "padding-right": "19px"
+            "padding-left": "21px",
+            "padding-right": "21px"
+          },
+          "quantityInput": {
+            "font-size": "14px",
+            "padding-top": "15px",
+            "padding-bottom": "15px"
           }
         },
         "text": {
           "button": "Add to cart"
         }
       },
+      "option": {},
       "cart": {
         "styles": {
           "button": {
+            "font-size": "14px",
+            "padding-top": "15px",
+            "padding-bottom": "15px",
             ":hover": {
               "background-color": "#a98181"
             },
@@ -175,6 +196,9 @@
             ":focus": {
               "background-color": "#a98181"
             }
+          },
+          "count": {
+            "font-size": "14px"
           }
         }
       }
